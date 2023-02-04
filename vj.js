@@ -1,7 +1,10 @@
 let ham=document.getElementById('hamburger');
-let navList=document.getElementById('hidden');
-console.log(navList);
+let list=document.getElementById('hidden');
+
+console.log(list);
 ham.addEventListener('click',()=>{
-    navList.classList.replace('hidden','block');
+    list.classList.toggle('active');
+    
     
 })
+

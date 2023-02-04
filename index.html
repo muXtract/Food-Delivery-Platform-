@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mic-Mac</title>
+    <title>MIC MAC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body class="bg-white">
     
         
-            <nav class="flex bg-red-500 justify-between ">
-                <div class="heading flex text-4xl ">Mic Mac</div>
-                
-                <div id= 'hamburger' class=" cursor-pointer hamburger ">
-                    <div id="top" class=" rounded-md top w-10 h-2 m-1 bg-black"></div>
-                    <div class=" rounded-md middle w-10 h-2 m-1  bg-black"></div>
-                    <div id="bottom"  class=" rounded-md bottom  w-10    h-2 m-1 bg-black"></div>
+            <nav class="flex shadow-lg justify-between ">
+                <div class="heading flex text-4xl ">MIC MAC</div>
+                <div id="hidden" class="links shadow-2xl flex-col hidden w-80 ml-5 absolute top-11   bg-white">
+                    <ul class="font-bold text-2xl p-3 m-3">
+                        <li><a href="#"> Home </li></a>
+                        <li><a href="#"> About Us </li></a>
+                        <li><a href="#"> Shop </li></a>
+                        <li><a href="#"> Contact Us </li></a>
+                    </ul>
                 </div>
+                <div id= 'hamburger' class="  cursor-pointer hamburger ">
+                    <div id="top" class=" rounded-md top w-5 h-2 m-1 bg-black"></div>
+                    <div class=" rounded-md middle w-10 h-2 m-1  bg-black"></div>
+                    <div id="bottom"  class=" rounded-md bottom  w-5 ml-auto    h-2 m-1 bg-black"></div>
+                </div>
+                
+            </nav>
                 
        
     
