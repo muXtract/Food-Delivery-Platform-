@@ -1,10 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #0f0e17;
+    height: 300vh;
+    overflow-x: hidden;
 }
-/* .links{
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-} */
-.links.active{
+ .links.active{
     display: block;
+}
+.hero-subtitle{
+    font-family: 'Architects Daughter', cursive;
+}
+.hero-title{
+    font-family: 'Glegoo', serif;
+}
+.text{
+    font-family: 'Mulish', sans-serif;
+}
+.content{
+    
+        font-family: 'Mulish', sans-serif;
+
 }

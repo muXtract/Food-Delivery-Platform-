@@ -8,32 +8,80 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Glegoo&family=Mulish:wght@200&display=swap" rel="stylesheet">
+
+
 </head>
 <body class="bg-white">
+    <header id="header" >
     
         
             <nav class="flex shadow-lg justify-between ">
-                <div class="heading flex text-4xl ">MIC MAC</div>
-                <div id="hidden" class="links shadow-2xl flex-col hidden w-80 ml-5 absolute top-11   bg-white">
+                <div class="heading flex text-4xl font-bold ml-2 ">MIC-MAC</div>
+                <div id="hidden" class="links cursor-pointer shadow-2xl flex-col hidden w-80 ml-5 absolute top-10   bg-white">
                     <ul class="font-bold text-2xl p-3 m-3">
                         <li><a href="#"> Home </li></a>
-                        <li><a href="#"> About Us </li></a>
-                        <li><a href="#"> Shop </li></a>
-                        <li><a href="#"> Contact Us </li></a>
+                        <li><a href="#"> Menu</li></a>
+                        <li><a href="#">Contact Us  </li></a>
+                        <li><a href="#"> Reviews </li></a>
                     </ul>
                 </div>
-                <div id= 'hamburger' class="  cursor-pointer hamburger ">
+                <div class="visible md:block md:justify-between hidden " >
+                    <ul class=" flex justify-between font-bold text-2xl mt-1 space-x-10">
+                        <li class=" hover:text-orange-400" ><a class="" href="#"> Home </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#"> Menu </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#">  Contact Us  </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#"> Reviews</li></a>
+
+                    </ul>
+                </div>
+                <ion-icon name="cart-outline" class="cursor-pointer hover:text-orange-400 w-8 h-10"></ion-icon>
+                <div class="search"><ion-icon name="search-outline" class="flex w-8 h-10 "></ion-icon></div>
+                <div id= 'hamburger' class=" md:hidden cursor-pointer hamburger ">
                     <div id="top" class=" rounded-md top w-5 h-2 m-1 bg-black"></div>
                     <div class=" rounded-md middle w-10 h-2 m-1  bg-black"></div>
                     <div id="bottom"  class=" rounded-md bottom  w-5 ml-auto    h-2 m-1 bg-black"></div>
                 </div>
                 
             </nav>
+    </header>
+  
+
+    <!-- hero section -->
+    <main>
+        <section class="hero bg-no-repeat bg-cover bg-center" id="hero" style=" background-image:url('hero.jpg') ">
+        <div class="container">
+            <div class="hero-content p-5">
+               <div class="title flex-col text-center  "> 
+                    <p class="hero-subtitle pt-5 text-2xl text-white  font-bold ">The night cafe for   </p>
+                    <h1 class="hero-title  text-3xl my-5 text-orange-400 font-bold  "> Midnight Cravings  </h2>
+                </div>
+
+
+                <div class="burger flex">
+                    <div class="content hidden md:block md:text-lg mt-2 text-white xl:text-3xl lg:text-2xl ">Looking for a late-night dining option at DTU? Look no further than the restaurant inside the campus! Open till late, it caters to the needs of college students who crave a hearty meal after a long day of studying.  Whether you want to grab a quick bite with friends or relax and unwind, this restaurant offers a comfortable and welcoming atmosphere for all. Come satisfy your cravings and enjoy a delicious meal, right at the heart of DTU!</div>
+                    <img src="hero-banner.png" width="700" class=" md:w-[400px] lg:w-[500px] " >
+                </div>
+                <div class="btn text-center  ">
+                    <button class="btn font-bold rounded-md p-2 bg-orange-500 my-4 text-xl hover:bg-white hover:text-black ">Order Now </button>
+                </div>  
+            
+                <p class="text text-xl  text-white text-center font-semibold ">
+                   Now open till 2am .
+                </p>
+                
+            </div>
+            
+        </div>
+        </section>
+    </main>
                 
        
     
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="vj.js"></script>
 </body>
 </html>
