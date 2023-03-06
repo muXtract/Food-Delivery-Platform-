@@ -1,11 +1,15 @@
 html{
-    scroll-behavior: smooth;
+ scroll-behavior: smooth;   
 }
+    
 body{
     background-color: #0f0e17;
     height: 300vh;
-    overflow-x: hidden;
+   
 }
+
+
+
  .links.active{
     display: block;
 }
@@ -22,4 +26,11 @@ body{
     
         font-family: 'Mulish', sans-serif;
 
+}
+.promo-item{
+    padding: 2px;
+}
+.container{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
 }
