@@ -34,3 +34,104 @@ body{
     font-family: 'Mulish', sans-serif;
     font-weight: bold;
 }
+
+.testi{ text-align:center;}
+.testi .section-title{
+     margin-block:10px 20px;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     font-size: 300%;
+     margin-top: 2%;
+     color: rgb(11, 11, 11);
+     text-shadow: 800ch;   
+}
+.testi .section-title .span{
+    color:rgb(117, 13, 107);
+    
+}
+.testi .section-subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size:150%;
+    margin-top: 5%;
+    color: rgb(241, 82, 82);
+    text-decoration: wavy;
+}
+.testi .section-text{ 
+    max-width: 44ch;
+    margin-inline: auto;
+    margin-block-end: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 2%;
+    color: rgba(34, 4, 91, 0.322);}
+    
+
+    .testi{
+    background-color: rgb(147, 212, 226);
+    padding: 5%;
+
+}
+.testi-card{
+    padding: 60px;
+    text-align: left;
+    align-items: flex-end;
+}
+.testi-card.profile-wrapper{
+    display: flex;
+    align-items:left ;
+    gap: 30px;
+}
+.testi-card.profile-wrapper.avatar{
+    min-width: max-content;
+    border: radius 60px; ;
+    overflow: hidden;
+    align-items: center;
+}
+.testi-card .testi-name{ margin: block end 20px;
+font-family:'Mulish', sans-serif;
+font-weight: bold;
+}
+
+.testi-card .testi-title{ 
+    font-family: var(--ff-rubik);
+    font-size: var(--fs-4);
+}
+
+.testi-card.testi-text{
+    margin-block: 20px 15px;
+}
+
+.testi-item1 {
+    border-width: 0.5cm;
+    border-color: rgb(40, 141, 230);
+    padding: 5px;
+    block-size: 20%;
+    border-style: groove;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.contact.content 
+{
+    max-width: 60px;
+    text-align: left;
+
+}
+.contact.contactInfo {
+    text-align: left;
+    font-weight: bold;
+}
+
+
+
+
+
