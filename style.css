@@ -1,88 +1,36 @@
 html{
-    scroll-behavior: smooth;   
-   }
-       
-   body{
-       background-color: #0f0e17;
-       height: 300vh;
-      
-   }
+ scroll-behavior: smooth;   
+}
+    
+body{
+    background-color: #0f0e17;
+    height: 300vh;
    
-   
-   
-    .links.active{
-       display: block;
-   }
-   .hero-subtitle{
-       font-family: 'Architects Daughter', cursive;
-   }
-   .hero-title{
-       font-family: 'Glegoo', serif;
-   }
-   .text{
-       font-family: 'Mulish', sans-serif;
-   }
-   .content{
-       
-           font-family: 'Mulish', sans-serif;
-   
-   }
-   .promo-item{
-       padding: 2px;
-   }
-   .container{
-       font-family: 'Mulish', sans-serif;
-       font-weight: bold;
-   }
-   .adj{
-       font-family: 'Lobster', cursive;
-   }
-   
-   
-   /* review section */
-   /* contactus section */
-   .contact{
-       position: relative;
-       min-height: 100vh;
-       padding: 50px 100px;
-       display: flex;
-       justify-content: left;
-       align-items: center;
-       flex-direction: column;
-       
-       
-   }
-   .contact.content 
-   {
-       max-width: 60px;
-       text-align: left;
-   
-   }
-   .contact.contactInfo {
-       text-align: left;
-       font-weight: bold;
-   }
-   /* DELIVERY BOY */
-      @keyframes slide {
-           from{
-               transform:translateX(0%);
-           }
-           to{
-               transform:translateX(150%);
-           }
-       }
-   .boy{
-       animation-name: slide;
-       animation-duration: 3s;
-       animation-timing-function:ease-in ;
-       
-       animation-iteration-count: infinite;
-   
-   
-   }
-   
+}
 
 
 
+ .links.active{
+    display: block;
+}
+.hero-subtitle{
+    font-family: 'Architects Daughter', cursive;
+}
+.hero-title{
+    font-family: 'Glegoo', serif;
+}
+.text{
+    font-family: 'Mulish', sans-serif;
+}
+.content{
+    
+        font-family: 'Mulish', sans-serif;
 
-
+}
+.promo-item{
+    padding: 2px;
+}
+.container{
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+}
