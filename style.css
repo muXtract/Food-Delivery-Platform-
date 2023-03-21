@@ -35,3 +35,22 @@ body{
     font-weight: bold;
 }
 
+.img{
+    display: flex;
+    justify-content: center;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(180%);
+    }
+}
+.boy{
+    animation-name: slide;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    
+}

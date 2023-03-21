@@ -1,88 +1,458 @@
-html{
- scroll-behavior: smooth;   
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIC MAC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
+    rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     
-body{
-    background-color: #0f0e17;
-    height: 300vh;
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Glegoo&family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body class="bg-white">
+    <div class="scroll-tracker"></div>
+    <header id="header" >
+            <nav class="flex shadow-lg justify-between ">
+                <div class="heading flex text-4xl font-bold ml-2 ">MIC-MAC</div>
+                <div id="hidden" class="links curxsor-pointer shadow-2xl flex-col hidden w-80 ml-5 absolute top-10   bg-white">
+                    <ul class="font-bold text-2xl p-3 m-3">
+                        <li><a href="#Home"> Home </li></a>
+                        <li><a href="#Menu"> Menu</li></a>
+                        <li><a href="#Reviews">Reviews  </li></a>
+                        <li><a href="#ContactUs"> Contact Us </li></a>
+                    </ul>
+                </div>
+                <div class=" md:block md:justify-between hidden " >
+                    <ul class=" flex justify-between font-bold text-2xl mt-1 space-x-10">
+                        <li class=" hover:text-orange-400" ><a class="" href="#Home"> Home </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#Menu"> Menu </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#Reviews">  Reviews  </li></a>
+                        <li class=" hover:text-orange-400" ><a class="" href="#ContactUs">  Contact Us</li></a>
+
+                    </ul>
+                </div>
+                <a href="order.html"><ion-icon  name="cart-outline" class="cursor-pointer mr-5 hover:text-orange-400 w-8 h-10"></ion-icon></a>
+                
+                <div id= 'hamburger' class=" md:hidden cursor-pointer hamburger ">
+                    <div id="top" class=" rounded-md top w-5 h-2 m-1 bg-black"></div>
+                    <div class=" rounded-md middle w-10 h-2 m-1  bg-black"></div>
+                    <div id="bottom"  class=" rounded-md bottom  w-5 ml-auto    h-2 m-1 bg-black"></div>
+                </div>
+                
+            </nav>
+    </header>
+  
+
+    <!-- hero section -->
+    <main>
+        <section  class="hero bg-no-repeat bg-cover mb-0 bg-center " id="hero" style=" background-image:url('hero.jpg') ">
+        <div class="container">
+            <div class="hero-content p-5">
+               <div class="title flex-col text-center  "> 
+                    <p class="hero-subtitle pt-5 text-2xl text-white  font-bold ">The night cafe for   </p>
+                    <h1 class="hero-title  text-3xl my-5 text-orange-400 font-bold  "> Midnight Cravings  </h2>
+                </div>
+
+
+                <div class="burger flex">
+                    <div class="content hidden md:block md:text-lg mt-2 text-white xl:text-3xl lg:text-2xl ">Looking for a late-night dining option at DTU? Look no further than the restaurant inside the campus! Open till late, it caters to the needs of college students who crave a hearty meal after a long day of studying.  Whether you want to grab a quick bite with friends or relax and unwind, this restaurant offers a comfortable and welcoming atmosphere for all. Come satisfy your cravings and enjoy a delicious meal, right at the heart of DTU!</div>
+                    <img src="hero-banner.png" width="700" class=" md:w-[400px] lg:w-[500px] " >
+                </div>
+                <div class="btn flex justify-center  ">
+                    <button class="btn font-bold rounded-md p-2 bg-orange-500 my-4 text-xl hover:bg-white hover:text-black ">Order Now </button>
+                </div>  
+            
+                <p class="text text-xl  text-white text-center font-semibold ">
+                   Now open till 2am .
+                </p>
+                
+            </div>
+            
+        </div>
+        </section>
+<!-- menu section -->
+        <section id="Menu" class="Menu bg-orange-50  ">
+            <div class="adj p-3">
+                <div class="logo  flex justify-center   ">
+                    <p class= " text-red-500 text-3xl relative top-3 flex justify-center"> Hot  </p>
+                    <img src="tinder.png" class=" mt-2 w-20 animate-bounce "  >
+                </div>
+               
+               <p class="  flex justify-center text-2xl ">On our menu</p>
+                
+            </div>
+        <div class="container1  md:flex md- justify-between">
+            <!-- <div class="card text-center m-auto  shadow-2xl"  style="width: 18rem;">
+                <div class="discount ">
+                    <h5 class="bg-red-600 inline absolute left-4 top-5 w-14 text-white font-bold ">-25%</h5>
+                </div>
+                <img src="promo-1.png" class="card-img-top pt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-2xl font-bold">Bread omelette</h5>
+                   <div class=""> <ul class="flex justify-center">
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" ></ion-icon></li>
+                    </ul>
+                    <div class="price m-2 flex justify-between">
+                        <p class=" font-mono text-xl text-red-600">Price  :</p>
+                        <h5 class="text-xl">Rs.29</h5>  
+                        <del class="text-red-400 text-xl">Rs.39</del>
+                        
+                    </div>
+                </div>
+                  <a href="order.html" class="btn btn-primary bg-black mt-3 text-orange-400">Order Now</a>
+                </div>
+            </div> -->
+            <div class="card text-center m-auto shadow-2xl"  style="width: 18rem;">
+                <div class="discount ">
+                    <h5 class="bg-red-600 inline absolute left-4 top-5 w-14 text-white font-bold ">-36%</h5>
+                </div>
+                <img src="promo-2.png" class="card-img-top pt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-2xl font-bold">Paneer Parantha</h5>
+                   <div class=""> <ul class="flex justify-center">
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                    </ul>
+                    <div class="price m-2 flex justify-between">
+                        <p class=" font-mono text-xl text-red-600">Price  :</p>
+                        <h5 class="text-xl">Rs.30</h5>  
+                        <del class="text-red-400 text-xl">Rs.49</del>
+                        
+                    </div>
+                </div>
+                  <a href="order.html" class="btn btn-primary bg-black mt-3 text-orange-400">Order Now</a>
+                </div>
+            </div>
+            <div class="card text-center m-auto shadow-2xl"  style="width: 18rem;">
+                <div class="discount ">
+                    <h5 class="bg-red-600 inline absolute left-4 top-5 w-14 text-white font-bold ">-20%</h5>
+                </div>
+                <img src="promo-3.png" class="card-img-top pt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-2xl font-bold">Rajma Chawal</h5>
+                   <div class=""> <ul class="flex justify-center">
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" ></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" ></ion-icon></li>
+                    </ul>
+                    <div class="price m-2 flex justify-between">
+                        <p class=" font-mono text-xl text-red-600">Price  :</p>
+                        <h5 class="text-xl">Rs.39</h5>  
+                        <del class="text-red-400 text-xl">Rs.49</del>
+                        
+                    </div>
+                </div>
+                  <a href="order.html" class="btn btn-primary bg-black mt-3 text-orange-400">Order Now</a>
+                </div>
+            </div>
+            <div class="card text-center m-auto shadow-2xl"  style="width: 18rem;">
+                <div class="discount ">
+                    <h5 class="bg-red-600 inline absolute left-4 top-5 w-14 text-white font-bold ">-35%</h5>
+                </div>
+                <img src="promo-4.png" class="card-img-top pt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-2xl font-bold">Maggi Tadka</h5>
+                   <div class=""> <ul class="flex justify-center">
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" ></ion-icon></li>
+                    </ul>
+                    <div class="price m-2 flex justify-between">
+                        <p class=" font-mono text-xl text-red-600">Price  :</p>
+                        <h5 class="text-xl">Rs.25</h5>  
+                        <del class="text-red-400 text-xl">Rs.39</del>
+                        
+                    </div>
+                </div>
+                  <a href="order.html" class="btn btn-primary bg-black mt-3 text-orange-400">Order Now</a>
+                </div>
+            </div>
+            <div class="card text-center m-auto shadow-2xl"  style="width: 18rem;">
+                <div class="discount ">
+                    <h5 class="bg-red-600 inline absolute left-4 top-5 w-14 text-white font-bold ">-20%</h5>
+                </div>
+                <img src="promo-5.png" class="card-img-top pt-5" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title text-2xl font-bold">Pao Bhaji</h5>
+                   <div class=""> <ul class="flex justify-center">
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                        <li class="stars"><ion-icon name="star" class="text-orange-500"></ion-icon></li>
+                    </ul>
+                    <div class="price m-2 flex justify-between">
+                        <p class=" font-mono text-xl text-red-600">Price  :</p>
+                        <h5 class="text-xl">Rs.49</h5>  
+                        <del class="text-red-400 text-xl">Rs.69</del>
+                        
+                    </div>
+                </div>
+                  <a href="#" class="btn btn-primary bg-black mt-3 text-orange-400">Order Now</a>
+                </div>
+            </div>
+        </div>
+           
+        </section>
+ <!-- Review  section -->
+     <section id= "Reviews" class=" Reviews overflow-auto">
+        <div class="testi  flex-col text-center mt-5 "> 
+            <span class="text-sm text-red-600 uppercase tracking-wide">What people say</span>
+            <h1 class="mt-8 text-5xl md:text-8xl  font-medium leading-tight">Testimonials</h1>
+        </div>  
+        <div class="container my-10 mx-auto px-4 md:px-12">
+            <div class="flex flex-wrap -mx-1 lg:-mx-4">
+        
+                <!-- Column -->
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        
+                    <!-- Article -->
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+        
+                        <a href="#">
+                            <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
+                        </a>
+        
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="#">
+                                    Maggi OP!!
+                                </a>
+                            </h1>
+                            <p class="text-grey-darker text-sm">
+                               3rd year CSE
+                            </p>
+                        </header>
+        
+                        <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                <p class="ml-2 text-sm">
+                                   Ritik Sharma
+                                </p>
+                            </a>
+                            <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                                <span class="hidden">Like</span>
+                                <i class="fa fa-heart"></i>          
+                            </a>
+                        </footer>
+        
+                    </article>
+                    <!-- END Article -->
+        
+                </div>
+                <!-- END Column -->
+        
+                <!-- Column -->
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        
+                    <!-- Article -->
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+        
+                        <a href="#">
+                            <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
+                        </a>
+        
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="#">
+                                    Better than murthal parantha
+                                </a>
+                            </h1>
+                            <p class="text-grey-darker text-sm">
+                                4th year EE
+                            </p>
+                        </header>
+        
+                        <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                <p class="ml-2 text-sm">
+                                    Karan Gupta
+                                </p>
+                            </a>
+                            <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                                <span class=" heart hidden">Like</span>
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </footer>
+        
+                    </article>
+                    <!-- END Article -->
+        
+                </div>
+                <!-- END Column -->
+        
+                <!-- Column -->
+                <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        
+                    <!-- Article -->
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+        
+                        <a href="#">
+                            <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
+                        </a>
+        
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="#">
+                                   Rajma Chawal's the bombb
+                                </a>
+                            </h1>
+                            <p class="text-grey-darker text-sm">
+                                4th year ECE
+                            </p>
+                        </header>
+        
+                        <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                <p class="ml-2 text-sm">
+                                    Priyanka Singh
+                                </p>
+                            </a>
+                            <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                                <span class="hidden">Like</span>
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </footer>
+        
+                    </article>
+                    <!-- END Article -->
+        
+                </div>
+                <!-- END Column -->
+        
+                <!-- Column -->
+                <div class="my-1 lg:hidden px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+        
+                    <!-- Article -->
+                    <article class="overflow-hidden rounded-lg shadow-lg">
+        
+                        <a href="#">
+                            <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random">
+                        </a>
+        
+                        <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                            <h1 class="text-lg">
+                                <a class="no-underline hover:underline text-black" href="#">
+                                   Delicious food 
+                                </a>
+                            </h1>
+                            <p class="text-grey-darker text-sm">
+                                3rd year MC
+                            </p>
+                        </header>
+        
+                        <footer class="flex items-center justify-between leading-none p-2 md:p-4">
+                            <a class="flex items-center no-underline hover:underline text-black" href="#">
+                                <img alt="Placeholder" class="block rounded-full" src="https://picsum.photos/32/32/?random">
+                                <p class="ml-2 text-sm">
+                                    Riya Sharma
+                                </p>
+                            </a>
+                            <a class="no-underline text-grey-darker hover:text-red-dark" href="#">
+                                <span class="hidden">Like</span>
+                                <i class="fa fa-heart"></i>
+                            </a>
+                        </footer>
+        
+                    </article>
+                    <!-- END Article -->
+        
+                </div>
+                <!-- END Column -->
+        
+              
+                
+        
+            </div>
+        </div>
+        </section>
+
+ <!-- CONTACTUS SECTION-->
+ <section id="ContactUs" class="contact md:text-2xl ">
+    <div class="content  ">
+        <h2 class="text-orange-600">Contact Us</h2>
+        <p>Have a question? Need help? Feel free to reach out to us!</p>
+     </div>
+   <div class="info">
+    <div class="contactInfo">
+        <div class="box">
+            <div class="icon"><i class=" text-orange-400 fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h2 class="font-bold ">Address</h2>
+                    <p> near Admin block <br>DTU shabhad dairy<br>Delhi 110042</p>
+                </div>
+            </div>
+            <div class="box">
+             <div class="icon"><i class=" text-orange-400 fa fa-phone" aria-hidden="true"></i> </div>
+                <div class="text">
+                     <h2 class="font-bold ">Phone</h2>
+                     <p> 0055-6667-8975</p>
+                </div>
+            </div>
+             <div class="box">
+                <div class="icon"><i class="text-orange-400  fa fa-envelope" aria-hidden="true"></i></div>
+                      <div class="text">
+                        <h2 class="font-bold ">Email</h2>
+                         <p>dtu.ac.in</p>
+                     </div>
+                </div>
+         </div>
+   </div>
    
-}
+</div>
+
+<!-- DELIVERY SECTION-->
+<section class="delivery section-divider">
+    <div class="container relative  ">
+        <figure class="delivery-banner  md:block hidden ">
+            <img src="delivery-banner-bg.png " class=" sm: p-20" width="500" height="300" loading="lazy">
+            <div class="delivery flex   ">
+                <img class=" w-40 boy   " src="delivery-boy (1).svg"  loading="lazy"  >
+             </div>
+        </figure>
+    </div>
+</section>  
+
+  
+  
+
+        
+        
+        
 
 
-
- .links.active{
-    display: block;
-}
-.hero-subtitle{
-    font-family: 'Architects Daughter', cursive;
-}
-.hero-title{
-    font-family: 'Glegoo', serif;
-}
-.text{
-    font-family: 'Mulish', sans-serif;
-}
-.content{
-    
-        font-family: 'Mulish', sans-serif;
-
-}
-.promo-item{
-    padding: 2px;
-}
-.container{
-    font-family: 'Mulish', sans-serif;
-    font-weight: bold;
-}
-.adj{
-    font-family: 'Lobster', cursive;
-}
-
-
-/* review section */
-/* contactus section */
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: column;
-    
-    
-}
-.contact.content 
-{
-    max-width: 60px;
-    text-align: left;
-
-}
-.contact.contactInfo {
-    text-align: left;
-    font-weight: bold;
-}
-/* DELIVERY BOY */
-   @keyframes slide {
-        from{
-            transform:translateX(0%);
-        }
-        to{
-            transform:translateX(150%);
-        }
-    }
-.boy{
-    animation-name: slide;
-    animation-duration: 3s;
-    animation-timing-function:ease-in ;
-    
-    animation-iteration-count: infinite;
-
-
-}
-
-
-
-
-
-
+ </main>
+                
+       
+            <script src="https://kit.fontawesome.com/e2f65fe63d.js" crossorigin="anonymous"></script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="vj.js"></script>
+</body>
+</html>
